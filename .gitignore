@@ -1,5 +1,6 @@
 # User-specific stuff:
 .idea/*
 *.iml
+target/* 
 
 //now git won't track .idea file
