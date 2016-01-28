@@ -3,18 +3,22 @@ package agustin.tenny.initlab01;
 /**
  * Created by Tenny on 1/27/16.
  */
+
+enum Color {
+    CAFEMOCHA, ORANGINA, MOUNTAINDEWGREEN
+}
 public class ColorfulThing {
 
-    String color; //instance variable
+    Color color; //instance variable
 
-    //constructor is public even without "public" because it defaults to the class it i
-    public ColorfulThing(String color) {
+    //constructor is public even without "public" because it defaults to the class it is in
+    public ColorfulThing(Color color) {
         this.color = color;
+
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
-
     }
 }
 

@@ -8,7 +8,8 @@ import static org.junit.Assert.*;
 public class ColorfulThingSpec {
     @Test
     public void getColorTest(){
-        ColorfulThing myColorfulThing = new ColorfulThing("blue");  //send string into it to test
-        assertEquals("test color","blue",myColorfulThing.getColor());  //put in error message, what you are expecting, and method with new object
+        ColorfulThing myColorfulThing = new ColorfulThing(Color.CAFEMOCHA); //send string into it to test
+        String result = myColorfulThing.getColor().toString();
+        assertEquals("test color","CAFEMOCHA", result);  //put in error message, what you are expecting, and method with new object
     }
 }
